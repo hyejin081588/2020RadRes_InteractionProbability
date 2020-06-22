@@ -1,12 +1,11 @@
 # 2020RadRes_InteractionProbability (Geant4.10.5)
-//Calculation of interaction probability with 150kVp, 6MV, and Ir-192
-//Each folder(P_150kVp, P_6MV, P_192Ir) has the same configuration.
+*Calculation of interaction probability with 150kVp, 6MV, and Ir-192
+*Each folder(P_150kVp, P_6MV, P_192Ir) has the same configuration.
+*Calculation depth : change "wantDepth" in folder of 2&3./src/DetecctorConstruction.cc
+*Weighting factor  : check "// 4. direction" part in folder of 4./src/PrimaryGeneratorAction.cc
 
-//Calculation depth : change "wantDepth" in folder of 2&3./src/DetecctorConstruction.cc
-//Weighting factor  : check "// 4. direction" part in folder of 4./src/PrimaryGeneratorAction.cc
 
-
-########################################## Geant4 codes ##########################################
+#################################### Geant4 codes #####################################
 1. Normalized Dose
   - physics   : G4EmPenelopePhysics
   - input     : -
@@ -38,7 +37,7 @@
 (X*: 150kVp, 6MV, 192Ir)
 
 
-########################################## matlab code ##########################################
+##################################### matlab code #####################################
 %% loading 2~4 output files in matlab
 output2 = loading("N1_D_X*_E7_s.txt");    % Deposited Dose at 1mm
 output3 = loading("N1_X*_phsp_s.txt");    % Phase space file at 1mm
