@@ -48,7 +48,7 @@ output3 = loading("N1_X*_phsp_s.txt");    % Phase space file at 1mm
 
 output4 = loading("N2_dE_GNP_X*_s.txt");  % ionization number in GNP
 
-%%%%%%%%%% calculation of Deposited dose at 1 mm
+%%%%%%%%%% calculation of Deposited dose at 1 mm and interaction probability
 
 dE = sum(output2);
 
