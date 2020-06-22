@@ -1,17 +1,17 @@
 # 2020RadRes_InteractionProbability (Geant4.10.5)
-*Calculation of interaction probability with 150kVp, 6MV, and Ir-192
+*Calculation of interaction probability with 150kVp, 6MV, and Ir-192.
 *Each folder(P_150kVp, P_6MV, P_192Ir) has the same configuration.
-*Calculation depth : change "wantDepth" in folder of 2&3./src/DetecctorConstruction.cc
-*Weighting factor  : check "// 4. direction" part in folder of 4./src/PrimaryGeneratorAction.cc
+*Calculation depth : change "wantDepth" in folder of 2&3./src/DetecctorConstruction.cc.
+*Weighting factor  : check "// 4. direction" part in folder of 4./src/PrimaryGeneratorAction.cc.
 
 
 #################################### Geant4 codes #####################################
 1. Normalized Dose
-  \t- physics   : G4EmPenelopePhysics
-  \t- input     : -
-  \t- output    : [distance(cm) dE(keV)] "N1_norm_X*_E7_s.txt"
-  \t- histories : E7
-  \t- how to run: ./N1_norm run.mac
+  - physics   : G4EmPenelopePhysics
+  - input     : -
+  - output    : [distance(cm) dE(keV)] "N1_norm_X*_E7_s.txt"
+  - histories : E7
+  - how to run: ./N1_norm run.mac
   
 2. Deposited Dose at 1mm
   - physics   : G4EmPenelopePhysics
