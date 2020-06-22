@@ -1,0 +1,54 @@
+/run/verbose 0
+/tracking/verbose 0
+
+/run/initialize
+
+/process/em/fluo true
+/process/em/auger true
+/process/em/augerCascade true
+/process/em/pixe true
+/process/em/pixeElecXSmodel Livermore
+/process/em/deexcitationIgnoreCut true
+
+/gps/particle gamma
+/gps/pos/type Plane
+/gps/pos/shape Circle
+/gps/pos/centre 0 0 -3.2 cm
+/gps/direction 0 0 1
+/gps/pos/radius 0.95 cm
+/gps/ene/min 0 MeV
+/gps/ene/max 6.25 MeV
+/gps/ene/emspec 0
+
+## energy spectrum set up ##
+/gps/ene/type User
+/gps/hist/type energy
+/gps/hist/point 0.00 0
+/gps/hist/point	0.25 1133.5
+/gps/hist/point	0.50 2088.6
+/gps/hist/point	0.75 2032.8
+/gps/hist/point	1.00 1712.4
+/gps/hist/point 1.25 1539.2
+/gps/hist/point	1.50 1369.2
+/gps/hist/point	1.75 1207.9
+/gps/hist/point	2.00 1058.6
+/gps/hist/point	2.25 946.9
+/gps/hist/point	2.50 871.2
+/gps/hist/point	2.75 780.1
+/gps/hist/point	3.00 731.7
+/gps/hist/point	3.25 712
+/gps/hist/point	3.50 687.3
+/gps/hist/point	3.75 577.8
+/gps/hist/point	4.00 498.7
+/gps/hist/point	4.25 431.8
+/gps/hist/point	4.50 359
+/gps/hist/point	4.75 307.2
+/gps/hist/point	5 24 0.8
+/gps/hist/point	5.25 190.9
+/gps/hist/point	5.50 133.8
+/gps/hist/point	5.75 74.7
+/gps/hist/point	6.00 27.3
+/gps/hist/point	6.25 3.5
+
+#/run/beamOn 20
+/run/beamOn 10000000

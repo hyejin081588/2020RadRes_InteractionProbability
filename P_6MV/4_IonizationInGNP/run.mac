@@ -1,0 +1,29 @@
+
+#
+/tracking/verbose 0
+/run/verbose 0
+/event/verbose 0
+
+/run/initialize
+
+/process/em/fluo true
+/process/em/auger true
+/process/em/augerCascade true
+/process/em/pixe true
+#/process/em/pixeElecXSmodel Livermore
+#/process/em/deexcitationIgnoreCut true 
+
+#/process/inactivate e-_G4DNAVibExcitation
+#/process/inactivate e-_G4DNAAttachment
+
+#/run/beamOn 100
+
+# for 1mm depth
+#/run/beamOn 9975426
+/run/beamOn 9975094
+#/run/beamOn 9975262
+
+# for 2cm depth
+#/run/beamOn 9256687
+#/run/beamOn 9257424
+#/run/beamOn 9257187
