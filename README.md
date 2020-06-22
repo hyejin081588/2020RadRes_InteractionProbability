@@ -7,11 +7,11 @@
 
 #################################### Geant4 codes #####################################
 1. Normalized Dose
-  - physics   : G4EmPenelopePhysics
-  - input     : -
-  - output    : [distance(cm) dE(keV)] "N1_norm_X*_E7_s.txt"
-  - histories : E7
-  - how to run: ./N1_norm run.mac
+  \t- physics   : G4EmPenelopePhysics
+  \t- input     : -
+  \t- output    : [distance(cm) dE(keV)] "N1_norm_X*_E7_s.txt"
+  \t- histories : E7
+  \t- how to run: ./N1_norm run.mac
   
 2. Deposited Dose at 1mm
   - physics   : G4EmPenelopePhysics
