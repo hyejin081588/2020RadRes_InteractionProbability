@@ -5,6 +5,7 @@
 * Weighting factor  : check "// 4. direction" part in folder of 4./src/PrimaryGeneratorAction.cc.
 
 
+
 #################################### Geant4 codes #####################################
 1. Normalized Dose
   - physics   : G4EmPenelopePhysics
@@ -38,19 +39,29 @@
 
 
 ##################################### matlab code #####################################
+
 %% loading 2~4 output files in matlab
+
 output2 = loading("N1_D_X*_E7_s.txt");    % Deposited Dose at 1mm
+
 output3 = loading("N1_X*_phsp_s.txt");    % Phase space file at 1mm
+
 output4 = loading("N2_dE_GNP_X*_s.txt");  % ionization number in GNP
 
 %% calculation of Deposited dose at 1 mm
+
 dE = sum(output2);
+
 h = 0.1;                                  % cm
+
 r = 0.95;                                 % cm
+
 c = 1.60218*10^-16;                       % 1 keV = 1.60218*10^-16 J
+
 D = c*dE/(pi()*r^2*h*10^-3);              % Gy
 
 scale1 = ((1.9*10^-9)/(1.9*10^-2))^2;     % phsp file beam area correction (cm to nm)
+
 scale2 = length(output3)/10^7;            % phsp file beam number correction
 
 p = length(output4)*scale1*scale2/D;
