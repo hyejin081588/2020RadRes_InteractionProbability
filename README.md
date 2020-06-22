@@ -1,8 +1,11 @@
 # 2020RadRes_InteractionProbability (Geant4.10.5)
-*Calculation of interaction probability with 150kVp, 6MV, and Ir-192.
-*Each folder(P_150kVp, P_6MV, P_192Ir) has the same configuration.
-*Calculation depth : change "wantDepth" in folder of 2&3./src/DetecctorConstruction.cc.
-*Weighting factor  : check "// 4. direction" part in folder of 4./src/PrimaryGeneratorAction.cc.
+* Calculation of interaction probability with 150kVp, 6MV, and Ir-192.
+
+* Each folder(P_150kVp, P_6MV, P_192Ir) has the same configuration.
+
+* Calculation depth : change "wantDepth" in folder of 2&3./src/DetecctorConstruction.cc.
+
+* Weighting factor  : check "// 4. direction" part in folder of 4./src/PrimaryGeneratorAction.cc.
 
 
 #################################### Geant4 codes #####################################
