@@ -1,0 +1,22 @@
+/run/verbose 0
+/tracking/verbose 0
+
+/run/initialize
+
+/process/em/fluo true
+/process/em/auger true
+/process/em/augerCascade true
+/process/em/pixe true
+/process/em/pixeElecXSmodel Livermore
+/process/em/deexcitationIgnoreCut true
+
+/gps/particle gamma
+/gps/pos/type Plane
+/gps/pos/shape Circle
+/gps/pos/centre 0 0 -3.2 cm
+/gps/direction 0 0 1
+/gps/pos/radius 0.95 cm
+/gps/ene/mono 356 keV
+
+#/run/beamOn 20
+/run/beamOn 10000000
