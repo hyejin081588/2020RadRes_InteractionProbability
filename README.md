@@ -42,11 +42,11 @@
 
 %%%%%%%%%% loading 2~4 output files in matlab
 
-output2 = loading("N1_D_X*_E7_s.txt");    % Deposited Dose at 1mm
+output2 = load("N1_D_X*_E7_s.txt");    % Deposited Dose at 1mm
 
-output3 = loading("N1_X*_phsp_s.txt");    % Phase space file at 1mm
+output3 = load("N1_X*_phsp_s.txt");    % Phase space file at 1mm
 
-output4 = loading("N2_dE_GNP_X*_s.txt");  % ionization number in GNP
+output4 = load("N2_dE_GNP_X*_s.txt");  % ionization number in GNP
 
 %%%%%%%%%% calculation of Deposited dose at 1 mm and interaction probability
 
