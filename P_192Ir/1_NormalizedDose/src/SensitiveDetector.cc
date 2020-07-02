@@ -17,7 +17,7 @@ void SensitiveDetector::Initialize(G4HCofThisEvent*){
 
 G4bool SensitiveDetector::ProcessHits(G4Step* aStep, G4TouchableHistory*){
 
-	G4double replicaheight = 0.1;	//cm
+	G4double replicaheight = 0.1*cm;	//cm
 
 	G4double dE = aStep->GetTotalEnergyDeposit();
 	G4int PrePV_copyNo = aStep->GetPreStepPoint()->GetTouchable()->GetReplicaNumber(0);
