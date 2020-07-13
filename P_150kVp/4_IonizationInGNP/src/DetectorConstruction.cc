@@ -68,8 +68,8 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
 
 void DetectorConstruction::ConstructSDandField()
 {
-	SensitiveDetector* mySD = new SensitiveDetector("detector");
-	G4SDManager::GetSDMpointer()->AddNewDetector(mySD);
-	SetSensitiveDetector("gold", mySD);
+	//SensitiveDetector* mySD = new SensitiveDetector("detector");
+	//G4SDManager::GetSDMpointer()->AddNewDetector(mySD);
+	//SetSensitiveDetector("gold", mySD);
 
 }
